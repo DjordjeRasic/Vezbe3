@@ -19,7 +19,7 @@ public class Client {
 		try {
 			sock = new Socket(addr, port);
 			
-			String poruka = "Zdravo svete Dodatak";
+			String poruka = "Zdravo svete ";
 			PrintWriter writer = new PrintWriter(new OutputStreamWriter(sock.getOutputStream()), true);
 			writer.println(poruka);
 			
